@@ -53,7 +53,7 @@ const ManageBooking = () => {
         const customerId = "12345"; // hardcoded for simplicity
 
         try {
-            const response = await fetch(`${backendPath}api/bookings/add-booking`, {
+            const response = await fetch(`https://fleet-navi.onrender.com/api/bookings/add-booking`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
