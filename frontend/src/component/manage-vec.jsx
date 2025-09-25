@@ -11,7 +11,7 @@ const ManageVehicle = () => {
   // Fetch all vehicles
   const fetchVehicles = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/vehicles');
+      const response = await fetch('https://fleet-navi.onrender.com/api/vehicles');
       if (response.ok) {
         const data = await response.json();
         setVehicles(data);
@@ -32,7 +32,7 @@ const ManageVehicle = () => {
     if (!window.confirm(`Are you sure you want to delete "${name}"?`)) return;
 
     try {
-      const response = await fetch('http://localhost:5000/api/remove', {
+      const response = await fetch('https://fleet-navi.onrender.com/api/remove', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ _id }),

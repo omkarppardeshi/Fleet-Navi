@@ -47,7 +47,7 @@ const AddVehicle = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/add', {
+      const response = await fetch('https://fleet-navi.onrender.com/api/add', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newVehicle),

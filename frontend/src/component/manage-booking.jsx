@@ -33,7 +33,7 @@ const ManageBooking = () => {
                 startTime
             }).toString();
 
-            const response = await fetch(`http://localhost:5000/api/available?${query}`);
+            const response = await fetch(`https://fleet-navi.onrender.com/api/available?${query}`);
             if (!response.ok) throw new Error("Failed to fetch available vehicles");
 
             const data = await response.json();
