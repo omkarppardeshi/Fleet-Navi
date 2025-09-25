@@ -19,15 +19,17 @@ function Home() {
         <CardBody>
           <CardTitle tag="h5">Welcome to Navi!</CardTitle>
           <CardText>
-            This is a wider card with supporting text below as a natural lead-in to additional content.
+            Discover a smarter way to manage your fleet with Navi. Track vehicles, monitor trips, and optimize routes—all in one place.
+            Designed for efficiency and simplicity, Navi helps you stay in control while saving time and resources.
           </CardText>
           <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted">Updated just now</small>
           </CardText>
         </CardBody>
+
       </Card>
 
-      
+
     </Container>
   );
 }
